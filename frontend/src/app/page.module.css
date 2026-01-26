@@ -1,0 +1,114 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.connectedBox {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #4caf50;
+}
+
+.connectedText {
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.addressText {
+  color: #555;
+  font-family: monospace;
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background: #5000cc;
+}
+
+.button:active {
+  background: #3d00a0;
+}
+
+.infoBox {
+  background: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ffc107;
+  margin-top: 2rem;
+}
+
+.infoTitle {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #856404;
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+}
+
+.infoList li {
+  color: #856404;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.infoList li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
