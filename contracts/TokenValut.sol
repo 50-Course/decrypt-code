@@ -94,11 +94,4 @@ contract TokenVault is Ownable, Pausable, ReentrancyGuard {
         _unpause();
     }
 
-    /**
-     * @notice Check if the contract is paused
-     * @return True if paused, false otherwise
-     */
-    function paused() external view returns (bool) {
-        return super.paused();
-    }
 }
