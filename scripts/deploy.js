@@ -1,4 +1,5 @@
-import { ethers } from "hardhat";
+const { ethers } = require("hardhat");
+
 
 /**
  * Deploy TokenVault contract to configured network
