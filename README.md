@@ -17,6 +17,21 @@ This assessment is designed to evaluate your full-stack blockchain development s
 
 We expect this assessment to take **6-8 hours** to complete. Focus on quality over speed - demonstrate your best practices and engineering approach.
 
+## Gallery
+<img width="1346" height="687" alt="Screenshot From 2026-01-29 02-39-47" src="https://github.com/user-attachments/assets/6a17c3ee-bf0b-43b1-aead-65e129c5ef17" />
+
+<img width="1346" height="687" alt="Screenshot From 2026-01-29 02-39-39" src="https://github.com/user-attachments/assets/b289cebc-2d8e-47ac-9f3e-fad5676d8469" />
+
+<img width="1366" height="768" alt="Screenshot From 2026-01-29 02-37-04" src="https://github.com/user-attachments/assets/048ae3a5-65a8-4a81-84da-bd8ebbb42778" />
+
+<img width="1346" height="687" alt="Screenshot From 2026-01-29 02-36-33" src="https://github.com/user-attachments/assets/e2f46092-33f4-40b2-b999-bf2fb59d953a" />
+<img width="1346" height="687" alt="Screenshot From 2026-01-29 02-28-31" src="https://github.com/user-attachments/assets/78353c89-e866-45ca-b837-90cc94b333aa" />
+
+<img width="1358" height="765" alt="Screenshot From 2026-01-29 02-02-47" src="https://github.com/user-attachments/assets/b3b42428-8fde-4a67-a0a3-ff959919d6e9" />
+
+<img width="1359" height="760" alt="Screenshot From 2026-01-29 01-58-38" src="https://github.com/user-attachments/assets/4ff6953e-83b1-464a-9315-68f89fb7e36d" />
+
+
 ## 🛠️ Setup
 
 ### Prerequisites
