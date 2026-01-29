@@ -18,6 +18,78 @@ To approach this, I focused on the following questions and design choices:
 - Should `totalDeposits` be public or have a getter? -> Getter (explicit interface)
 - Should we emit events in pause/unpause? -> OpenZeppelin already does this
 
+### The Architecture
+
+```mermaid
+classDiagram
+    %% Inheritance Relationships
+    Ownable <|-- TokenVault
+    Pausable <|-- TokenVault
+    ReentrancyGuard <|-- TokenVault
+
+    class TokenVault {
+        %% State Variables
+        +mapping(user => mapping(token => uint)) balances
+        +mapping(token => uint) totalDeposits
+        
+        %% Core Functions
+        +deposit(address token, uint256 amount)
+        +withdraw(address token, uint256 amount)
+        +balanceOf(address user, address token) view
+        +totalDeposits(address token) view
+        
+        %% Admin Functions
+        +pause() onlyOwner
+        +unpause() onlyOwner
+    }
+
+    class Ownable {
+        <<OpenZeppelin>>
+    }
+    class Pausable {
+        <<OpenZeppelin>>
+    }
+    class ReentrancyGuard {
+        <<OpenZeppelin>>
+    }
+```
+
+```mermaid
+graph TD
+    TV[TokenVault]
+    
+    %% Subgraphs for organization
+    subgraph Storage
+        S1[mapping balances]
+        S2[mapping totalDeposits]
+    end
+    
+    subgraph Inheritance
+        I1(Ownable)
+        I2(Pausable)
+        I3(ReentrancyGuard)
+    end
+    
+    subgraph Core_Functions
+        C1[deposit]
+        C2[withdraw]
+        C3[balanceOf]
+        C4[totalDeposits]
+    end
+    
+    subgraph Admin_Functions
+        A1[pause]
+        A2[unpause]
+    end
+
+    %% Connections
+    TV --- Storage
+    TV --- Inheritance
+    TV --- Core_Functions
+    TV --- Admin_Functions
+    
+    style TV fill:#f9f,stroke:#333,stroke-width:4px
+```
 ## Task 2: Backend API Configuration
 
 Configured the backend API to connect to the deployed smart contract by updating the contract address and ABI in the configuration files, precisely in `config/blockchain.js`.
