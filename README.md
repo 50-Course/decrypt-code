@@ -55,13 +55,13 @@ Please see the individual task files in the `tasks/` directory:
 
 Before submitting, ensure you have:
 
-- [ ] Completed all 3 tasks (Smart Contract, Backend Configuration, Frontend Configuration)
-- [ ] Smart contract is deployed and tested
-- [ ] Backend API is configured and functional
-- [ ] Frontend app connects to backend and wallet
-- [ ] Documented any assumptions or design decisions
-- [ ] Added a brief explanation of your approach in `SOLUTION.md`
-- [ ] Included setup instructions for each component
+- [x] Completed all 3 tasks (Smart Contract, Backend Configuration, Frontend Configuration)
+- [x] Smart contract is deployed and tested
+- [x] Backend API is configured and functional
+- [x] Frontend app connects to backend and wallet
+- [x] Documented any assumptions or design decisions
+- [x] Added a brief explanation of your approach in `SOLUTION.md`
+- [x] Included setup instructions for each component
 
 ## 📧 Questions?
 
